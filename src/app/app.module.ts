@@ -12,7 +12,12 @@ import { NavbarUserComponent } from './frontOffice/navbar-user/navbar-user.compo
 import { BannerUserComponent } from './frontOffice/banner-user/banner-user.component';
 import { FooterUserComponent } from './frontOffice/footer-user/footer-user.component';
 import { RegisterUserComponent } from './frontOffice/register-user/register-user.component';
-import { RegisterAdminComponent } from './backOffice/register-admin/register-admin.component';
+import { RegisterBuyerAdminComponent } from './backOffice/register-buyer-admin/register-buyer-admin.component';
+import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
+import { RegisterVendorAdminComponent } from './backOffice/register-vendor-admin/register-vendor-admin.component';
+import { RegisterProviderAdminComponent } from './backOffice/register-provider-admin/register-provider-admin.component';
+import { RegisterLivreurAdminComponent } from './backOffice/register-livreur-admin/register-livreur-admin.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +31,16 @@ import { RegisterAdminComponent } from './backOffice/register-admin/register-adm
     BannerUserComponent,
     FooterUserComponent,
     RegisterUserComponent,
-    RegisterAdminComponent
+    RegisterBuyerAdminComponent,
+    RegisterVendorAdminComponent,
+    RegisterProviderAdminComponent,
+    RegisterLivreurAdminComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
