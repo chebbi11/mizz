@@ -5,6 +5,10 @@ import {Component, OnInit} from '@angular/core';
   templateUrl: './footer-admin.component.html',
   styleUrls: ['./footer-admin.component.css']
 })
-export class FooterAdminComponent {
+export class FooterAdminComponent implements OnInit{
+  constructor() {
+  }
+  ngOnInit(): void {
+  }
 
 }

@@ -5,5 +5,9 @@ import {Component, OnInit} from '@angular/core';
   templateUrl: './navbar-admin.component.html',
   styleUrls: ['./navbar-admin.component.css']
 })
-export class NavbarAdminComponent {
+export class NavbarAdminComponent implements OnInit{
+  constructor() {
+  }
+  ngOnInit(): void {
+  }
 }
