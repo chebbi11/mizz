@@ -11,13 +11,17 @@ import { FooterAdminComponent } from './backOffice/footer-admin/footer-admin.com
 import { NavbarUserComponent } from './frontOffice/navbar-user/navbar-user.component';
 import { BannerUserComponent } from './frontOffice/banner-user/banner-user.component';
 import { FooterUserComponent } from './frontOffice/footer-user/footer-user.component';
-import { RegisterUserComponent } from './frontOffice/register-user/register-user.component';
 import { RegisterBuyerAdminComponent } from './backOffice/register-buyer-admin/register-buyer-admin.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { RegisterVendorAdminComponent } from './backOffice/register-vendor-admin/register-vendor-admin.component';
 import { RegisterProviderAdminComponent } from './backOffice/register-provider-admin/register-provider-admin.component';
 import { RegisterLivreurAdminComponent } from './backOffice/register-livreur-admin/register-livreur-admin.component';
+import { RegisterBuyerUserComponent } from './frontOffice/register-buyer-user/register-buyer-user.component';
+import { RegisterLivreurUserComponent } from './frontOffice/register-livreur-user/register-livreur-user.component';
+import { RegisterProviderUserComponent } from './frontOffice/register-provider-user/register-provider-user.component';
+import {SendCodeUserComponent} from "./frontOffice/send-code-user/send-code-user.component";
+import {RegisterVendorUserComponent} from "./frontOffice/register-vendor-user/register-vendor-user.component";
 
 @NgModule({
   declarations: [
@@ -30,11 +34,15 @@ import { RegisterLivreurAdminComponent } from './backOffice/register-livreur-adm
     NavbarUserComponent,
     BannerUserComponent,
     FooterUserComponent,
-    RegisterUserComponent,
     RegisterBuyerAdminComponent,
     RegisterVendorAdminComponent,
     RegisterProviderAdminComponent,
-    RegisterLivreurAdminComponent
+    RegisterLivreurAdminComponent,
+    RegisterBuyerUserComponent,
+    RegisterLivreurUserComponent,
+    RegisterProviderUserComponent,
+    RegisterVendorUserComponent,
+    SendCodeUserComponent
   ],
   imports: [
     BrowserModule,
