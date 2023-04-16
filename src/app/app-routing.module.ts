@@ -11,6 +11,8 @@ import {RegisterLivreurUserComponent} from "./frontOffice/register-livreur-user/
 import {RegisterProviderUserComponent} from "./frontOffice/register-provider-user/register-provider-user.component";
 import {RegisterVendorUserComponent} from "./frontOffice/register-vendor-user/register-vendor-user.component";
 import {SendCodeUserComponent} from "./frontOffice/send-code-user/send-code-user.component";
+import {HomeUserComponent} from "./frontOffice/home-user/home-user.component";
+import {RegisterUserComponent} from "./frontOffice/register-user/register-user.component";
 
 const routes: Routes = [
   {
@@ -27,6 +29,8 @@ const routes: Routes = [
     path:'user',
     component: AllTemplateUserComponent,
     children:[
+      {path:'',component:HomeUserComponent},
+      {path:'register',component:RegisterUserComponent},
       {path:'register-buyer',component:RegisterBuyerUserComponent},
       {path:'register-livreur',component:RegisterLivreurUserComponent},
       {path:'register-provider',component:RegisterProviderUserComponent},
