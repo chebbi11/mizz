@@ -11,22 +11,26 @@ export class RegisterVendorUserComponent implements OnInit{
   successMessage: string = '';
   roles: string[] = ['ADMIN', 'MODERATOR', 'BUYER','VENDOR','PROVIDER','LIVREUR'];
   defaultRole:string='VENDOR';
+  isLoading: boolean = false;
 
   ngOnInit(): void {
 
   }
   constructor(private userService: UserService) { }
   register() {
+    this.isLoading = true;
     this.registerRequest.role = this.defaultRole;
     this.userService.register(this.registerRequest).subscribe(
       response => {
         console.log(response);
         this.successMessage = 'Le compte a été créé avec succès !';
         // Si la requête a réussi, vous pouvez effectuer des actions supplémentaires ici, telles que rediriger l'utilisateur vers une autre page
+        this.isLoading = false;
       },
       error => {
         console.error(error);
         // Si la requête a échoué, vous pouvez afficher un message d'erreur à l'utilisateur ici
+        this.isLoading = false;
       }
     );
   }

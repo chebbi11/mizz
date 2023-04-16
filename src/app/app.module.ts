@@ -22,6 +22,9 @@ import { RegisterLivreurUserComponent } from './frontOffice/register-livreur-use
 import { RegisterProviderUserComponent } from './frontOffice/register-provider-user/register-provider-user.component';
 import {SendCodeUserComponent} from "./frontOffice/send-code-user/send-code-user.component";
 import {RegisterVendorUserComponent} from "./frontOffice/register-vendor-user/register-vendor-user.component";
+import { HomeUserComponent } from './frontOffice/home-user/home-user.component';
+import { RegisterUserComponent } from './frontOffice/register-user/register-user.component';
+import { PreloaderUserComponent } from './frontOffice/preloader-user/preloader-user.component';
 
 
 
@@ -44,7 +47,10 @@ import {RegisterVendorUserComponent} from "./frontOffice/register-vendor-user/re
     RegisterLivreurUserComponent,
     RegisterProviderUserComponent,
     RegisterVendorUserComponent,
-    SendCodeUserComponent
+    SendCodeUserComponent,
+    HomeUserComponent,
+    RegisterUserComponent,
+    PreloaderUserComponent
   ],
   imports: [
     BrowserModule,
