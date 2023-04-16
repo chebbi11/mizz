@@ -10,6 +10,8 @@ export class SendCodeUserComponent {
   email!: string;
   code!: number;
   message!: string;
+  countdown: number = 60;
+  codeSent: boolean = false;
 
   constructor(private userService: UserService) {}
 
@@ -25,6 +27,28 @@ export class SendCodeUserComponent {
           this.message = 'Failed to send code';
         }
       );
+    this.codeSent = true;
+    this.startCountdown();
+  }
+  onVerify() {
+    this.userService.verifyCode(this.email, this.code)
+      .subscribe(
+        (response) => {
+          console.log(response);
+          this.message = 'Your account has been successfully verified.';
+        },
+        (error) => {
+          console.error(error);
+          this.message = 'Unfortunately, we cannot verify your account at this time.';
+        }
+      );
+  }
+  startCountdown() {
+    setInterval(() => {
+      if (this.countdown > 0) {
+        this.countdown--;
+      }
+    }, 1000);
   }
 
 }

@@ -23,6 +23,7 @@ import { RegisterProviderUserComponent } from './frontOffice/register-provider-u
 import {SendCodeUserComponent} from "./frontOffice/send-code-user/send-code-user.component";
 import {RegisterVendorUserComponent} from "./frontOffice/register-vendor-user/register-vendor-user.component";
 
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -42,6 +42,32 @@
 
         </div>
       </div>
+      <br><br><br>
+      <div class="section-title text-center" *ngIf="codeSent">
+        <h6 class="sub-title">If the timer reaches zero, please try again.</h6>
+        <h6>{{countdown}}</h6>
+      </div>
+      <div class="footer-subscribe">
+        <div class="container">
+          <form class="footer-subscribe-inner" (submit)="onVerify()">
+            <div class="row justify-content-center">
+              <div class="col-lg-5">
+                <div class="single-input-inner style-border-bottom">
+                  <input
+                    type="number"
+                    [(ngModel)]="code"
+                    name="code"
+                    placeholder="code">
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <button type="submit" class="btn btn-base w-100 text-center">Verify</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
     </div>
   </div>
 </div>
