@@ -1,0 +1,210 @@
+<!-- Layout wrapper -->
+<div class="layout-wrapper layout-content-navbar">
+  <div class="layout-container">
+    <app-menu-admin></app-menu-admin>
+    <div class="layout-page">
+      <app-navbar-admin></app-navbar-admin>
+      <div class="content-wrapper">
+        <div class="container-xxl flex-grow-1 container-p-y">
+          <div class="row">
+            <div class="col-lg-8 mb-4 order-0">
+              <div class="card">
+                <div class="d-flex align-items-end row">
+                  <div class="col-sm-7">
+                    <div class="card-body">
+                      <form (ngSubmit)="register()">
+                        <h5 class="card-title text-primary">Provider registration: Enter required details.</h5>
+                        <div class="card-body demo-vertical-spacing demo-only-element">
+                          <label class="form-label" for="basic-default-password32">Firstname</label>
+                          <div class="input-group input-group-merge">
+                          <span id="basic-icon-default-fullname2" class="input-group-text"
+                          ><i class="bx bx-user"></i
+                          ></span>
+                            <input
+                              name="firstname"
+                              [(ngModel)]="registerRequest.firstname"
+                              type="text"
+                              class="form-control"
+                              id="basic-icon-default-fullname"
+                              placeholder=" John"
+                              aria-label="  John"
+                              aria-describedby="basic-icon-default-fullname2"
+                            />
+                          </div>
+                          <label class="form-label" for="basic-default-password32">Lastname</label>
+                          <div class="input-group input-group-merge">
+                          <span class="input-group-text"
+                          ><i class="bx bx-user"></i
+                          ></span>
+                            <input
+                              name="firstname"
+                              [(ngModel)]="registerRequest.lastname"
+                              type="text"
+                              class="form-control"
+                              placeholder=" Doe"
+                              aria-label="  Doe"
+                              aria-describedby="basic-icon-default-fullname2"
+                            />
+                          </div>
+                          <div class="form-password-toggle">
+                            <label class="form-label" for="basic-default-password32">Password</label>
+                            <div class="input-group input-group-merge">
+                              <input
+                                type="password"
+                                name="password"
+                                [(ngModel)]="registerRequest.password"
+                                class="form-control"
+                                id="basic-default-password32"
+                                placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                                aria-describedby="basic-default-password"
+                              />
+                              <span class="input-group-text cursor-pointer" id="basic-default-password"><i class="bx bx-hide"></i></span>
+                            </div>
+                          </div>
+                          <label class="form-label" for="basic-default-password32">Email</label>
+                          <div class="input-group input-group-merge">
+                            <input
+                              type="email"
+                              name="email"
+                              [(ngModel)]="registerRequest.email"
+                              class="form-control"
+                              placeholder="Email"
+                              aria-label="Email"
+                              aria-describedby="basic-addon33"
+                            />
+                            <span class="input-group-text" id="basic-addon33">@example.com</span>
+                          </div>
+                          <label class="form-label" for="basic-default-password32">Company</label>
+                          <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-company2" class="input-group-text"
+                              ><i class="bx bx-buildings"></i
+                              ></span>
+                            <input
+                              type="text"
+                              name="company"
+                              [(ngModel)]="registerRequest.company"
+                              id="basic-icon-default-company"
+                              class="form-control"
+                              placeholder=" ACME Inc."
+                              aria-label="  ACME Inc."
+                              aria-describedby="basic-icon-default-company2"
+                            />
+                          </div>
+                          <label class="form-label" for="basic-default-password32">Address</label>
+                          <div class="input-group input-group-merge">
+                              <span class="input-group-text"
+                              ><i class="bx bx-map"></i
+                              ></span>
+                            <input
+                              type="text"
+                              name="company"
+                              [(ngModel)]="registerRequest.address"
+                              class="form-control"
+                              placeholder=" 1234 NW Bobcat Lane, St. Robert, MO 65584-5678"
+                              aria-label="  1234 NW Bobcat Lane, St. Robert, MO 65584-5678"
+                              aria-describedby="basic-icon-default-company2"
+                            />
+                          </div>
+                          <label class="form-label" for="basic-default-password32">Confirm role</label>
+                          <div class="input-group input-group-merge">
+                            <span class="input-group-text"><i class="bx bx-user-pin"></i></span>
+                            <select id="defaultSelect" class="form-select" [(ngModel)]="registerRequest.role" name="role">
+                              <option value="VENDOR">The person in question is a provider.</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row justify-content-end">
+                          <div class="col-sm-2">
+                            <button type="submit" class="btn btn-primary">Register</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 order-1">
+              <div class="row">
+                <div class="col-lg-6 col-md-12 col-6 mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-title d-flex align-items-start justify-content-between">
+                        <div class="avatar flex-shrink-0">
+                          <img
+                            src="/assets/back/img/icons/unicons/chart-success.png"
+                            alt="chart success"
+                            class="rounded"
+                          />
+                        </div>
+                        <div class="dropdown">
+                          <button
+                            class="btn p-0"
+                            type="button"
+                            id="cardOpt3"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i class="bx bx-dots-vertical-rounded"></i>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
+                            <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                            <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                          </div>
+                        </div>
+                      </div>
+                      <span class="fw-semibold d-block mb-1">Profit</span>
+                      <h3 class="card-title mb-2">$12,628</h3>
+                      <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +72.80%</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-6 mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-title d-flex align-items-start justify-content-between">
+                        <div class="avatar flex-shrink-0">
+                          <img
+                            src="/assets/back/img/icons/unicons/wallet-info.png"
+                            alt="Credit Card"
+                            class="rounded"
+                          />
+                        </div>
+                        <div class="dropdown">
+                          <button
+                            class="btn p-0"
+                            type="button"
+                            id="cardOpt6"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i class="bx bx-dots-vertical-rounded"></i>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
+                            <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                            <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                          </div>
+                        </div>
+                      </div>
+                      <span>Sales</span>
+                      <h3 class="card-title text-nowrap mb-1">$4,679</h3>
+                      <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +28.42%</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-backdrop fade"></div>
+          </div>
+          <br><br><br>
+          <app-footer-admin></app-footer-admin>
+        </div>
+      </div>
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+  </div>
+</div>
+
+

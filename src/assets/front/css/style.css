@@ -46,7 +46,7 @@ Version: 1.0.2
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,600,700i&display=swap");
 
 :root {
-  --main-color: #FDC800;
+  --main-color: #fdc800;
   --heading-color: #002147;
   --paragraph-color: #565872;
   --body-font: "Rubik", sans-serif;
@@ -55,7 +55,7 @@ Version: 1.0.2
 }
 
 .home-3 {
-  --main-color: #1DC295;
+  --main-color: #fdc800;
 }
 
 html {
@@ -863,7 +863,7 @@ ul {
 }
 
 /*-----------------------------------------
-    ## Breadcumb 
+    ## Breadcumb
 ------------------------------------------*/
 .video-play-btn {
   border-radius: 50%;
@@ -923,7 +923,7 @@ ul {
 }
 
 /*-----------------------------------------
-    ## Breadcumb 
+    ## Breadcumb
 ------------------------------------------*/
 .breadcrumb-area {
   padding: 282px 0 125px;
@@ -1658,7 +1658,7 @@ ul {
 }
 
 /*----------------------------------------------
-    # Nav bar 
+    # Nav bar
 ----------------------------------------------*/
 .navbar-top {
   padding: 13px 0 4px 0;
