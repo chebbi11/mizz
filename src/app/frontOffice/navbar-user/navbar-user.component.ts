@@ -13,6 +13,10 @@ export class NavbarUserComponent{
     console.log("ok");
     this.router.navigate(['user/register']);
   }
+  redirectToAuthenticate() {
+    console.log("ok");
+    this.router.navigate(['user/authenticate']);
+  }
   redirectToHome() {
     console.log("ok");
     this.router.navigate(['user']);

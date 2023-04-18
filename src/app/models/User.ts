@@ -13,3 +13,12 @@ export class User{
   code!: number;
   isSubscribed!: boolean;
 }
+
+export interface AuthenticationRequest {
+  email: string;
+  password: string;
+}
+
+export interface AuthenticationResponse {
+  token: string;
+}

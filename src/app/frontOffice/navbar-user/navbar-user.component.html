@@ -36,7 +36,7 @@
         <a (click)="redirectToHome()"><img src="/assets/front/img/logococo.png" alt="img"></a>
       </div>
       <div class="nav-right-part nav-right-part-mobile">
-        <a class="signin-btn" href="signin.html">Sign In</a>
+        <a class="signin-btn" (click)="redirectToAuthenticate()">Sign In</a>
         <a class="btn btn-base" (click)="redirectToRegister()">Sign Up</a>
         <a class="search-bar" href="#"><i class="fa fa-search"></i></a>
       </div>
@@ -67,7 +67,7 @@
               <li><a href="team-details.html">Instructor Details</a></li>
               <li><a href="pricing.html">Pricing</a></li>
               <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="signin.html">Sign In</a></li>
+              <li><a (click)="redirectToAuthenticate()">Sign In</a></li>
               <li><a (click)="redirectToRegister()">Sign Up</a></li>
             </ul>
           </li>
@@ -83,7 +83,7 @@
         </ul>
       </div>
       <div class="nav-right-part nav-right-part-desktop">
-        <a class="signin-btn" href="signin.html">Sign In</a>
+        <a class="btn" (click)="redirectToAuthenticate()">Sign In</a>
         <a class="btn btn-base" (click)="redirectToRegister()">Sign Up</a>
         <a class="search-bar" href="#"><i class="fa fa-search"></i></a>
       </div>
