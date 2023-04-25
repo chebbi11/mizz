@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {UserService} from "../../services/user.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-register-provider-user',
@@ -16,7 +17,7 @@ export class RegisterProviderUserComponent implements OnInit{
   ngOnInit(): void {
 
   }
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService,private router: Router) { }
 
   register() {
     this.isLoading = true;
@@ -26,6 +27,7 @@ export class RegisterProviderUserComponent implements OnInit{
         console.log(response);
         this.successMessage = 'Le compte a été créé avec succès !';
         // Si la requête a réussi, vous pouvez effectuer des actions supplémentaires ici, telles que rediriger l'utilisateur vers une autre page
+        this.router.navigate(['user/send-code']);
         this.isLoading = false;
       },
       error => {

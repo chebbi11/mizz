@@ -13,11 +13,20 @@ import {RegisterVendorUserComponent} from "./frontOffice/register-vendor-user/re
 import {SendCodeUserComponent} from "./frontOffice/send-code-user/send-code-user.component";
 import {HomeUserComponent} from "./frontOffice/home-user/home-user.component";
 import {RegisterUserComponent} from "./frontOffice/register-user/register-user.component";
+import {AuthenticationUserComponent} from "./frontOffice/authentication-user/authentication-user.component";
+import {UploadLogoUserComponent} from "./frontOffice/upload-logo-user/upload-logo-user.component";
+import {HomeBuyerUserComponent} from "./frontOffice/home-buyer-user/home-buyer-user.component";
+import {ShowAdminComponent} from "./backOffice/show-admin/show-admin.component";
+import {DashboardAdminComponent} from "./backOffice/dashboard-admin/dashboard-admin.component";
+import {DetailsAdminComponent} from "./backOffice/details-admin/details-admin.component";
 
 const routes: Routes = [
   {
     path:'admin', component:AllTemplateAdminComponent,
     children:[
+      {path:'', component:DashboardAdminComponent},
+      {path:'show', component:ShowAdminComponent},
+      {path:'details/:id', component:DetailsAdminComponent},
       {path:'register-buyer', component:RegisterBuyerAdminComponent},
       {path:'register-vendor', component:RegisterVendorAdminComponent},
       {path:'register-provider', component:RegisterProviderAdminComponent},
@@ -35,7 +44,10 @@ const routes: Routes = [
       {path:'register-livreur',component:RegisterLivreurUserComponent},
       {path:'register-provider',component:RegisterProviderUserComponent},
       {path:'register-vendor',component:RegisterVendorUserComponent},
-      {path:'send-code',component:SendCodeUserComponent}
+      {path:'send-code',component:SendCodeUserComponent},
+      {path:'authenticate',component:AuthenticationUserComponent},
+      {path:'upload-logo',component:UploadLogoUserComponent},
+      {path:'home-buyer',component:HomeBuyerUserComponent}
     ]
   }
 ];

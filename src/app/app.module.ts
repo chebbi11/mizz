@@ -25,6 +25,16 @@ import {RegisterVendorUserComponent} from "./frontOffice/register-vendor-user/re
 import { HomeUserComponent } from './frontOffice/home-user/home-user.component';
 import { RegisterUserComponent } from './frontOffice/register-user/register-user.component';
 import { PreloaderUserComponent } from './frontOffice/preloader-user/preloader-user.component';
+import { AuthenticationUserComponent } from './frontOffice/authentication-user/authentication-user.component';
+import { UploadLogoUserComponent } from './frontOffice/upload-logo-user/upload-logo-user.component';
+import { HomeBuyerUserComponent } from './frontOffice/home-buyer-user/home-buyer-user.component';
+import { HomeLivreurUserComponent } from './frontOffice/home-livreur-user/home-livreur-user.component';
+import { HomeProviderUserComponent } from './frontOffice/home-provider-user/home-provider-user.component';
+import { HomeVendorUserComponent } from './frontOffice/home-vendor-user/home-vendor-user.component';
+import { ShowAdminComponent } from './backOffice/show-admin/show-admin.component';
+import { DashboardAdminComponent } from './backOffice/dashboard-admin/dashboard-admin.component';
+import { DetailsAdminComponent } from './backOffice/details-admin/details-admin.component';
+
 
 
 
@@ -50,7 +60,16 @@ import { PreloaderUserComponent } from './frontOffice/preloader-user/preloader-u
     SendCodeUserComponent,
     HomeUserComponent,
     RegisterUserComponent,
-    PreloaderUserComponent
+    PreloaderUserComponent,
+    AuthenticationUserComponent,
+    UploadLogoUserComponent,
+    HomeBuyerUserComponent,
+    HomeLivreurUserComponent,
+    HomeProviderUserComponent,
+    HomeVendorUserComponent,
+    ShowAdminComponent,
+    DashboardAdminComponent,
+    DetailsAdminComponent
   ],
   imports: [
     BrowserModule,
